@@ -12,7 +12,5 @@ set(PICO_EXAMPLES_PATH ${PROJECT_SOURCE_DIR})
 # Initialize the SDK
 pico_sdk_init()
 
-# Add hello world example
-add_subdirectory(hello_world)
 add_subdirectory(puzzle)
 

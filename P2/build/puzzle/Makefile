@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/pi/pico/ME-0193/P2/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -124,6 +124,21 @@ puzzle: puzzle/CMakeFiles/puzzle.dir/rule
 puzzle/fast:
 	cd /home/pi/pico/ME-0193/P2/build && $(MAKE) -f puzzle/CMakeFiles/puzzle.dir/build.make puzzle/CMakeFiles/puzzle.dir/build
 .PHONY : puzzle/fast
+
+# Convenience name for target.
+puzzle/CMakeFiles/ELF2UF2Build.dir/rule:
+	cd /home/pi/pico/ME-0193/P2/build && $(MAKE) -f CMakeFiles/Makefile2 puzzle/CMakeFiles/ELF2UF2Build.dir/rule
+.PHONY : puzzle/CMakeFiles/ELF2UF2Build.dir/rule
+
+# Convenience name for target.
+ELF2UF2Build: puzzle/CMakeFiles/ELF2UF2Build.dir/rule
+
+.PHONY : ELF2UF2Build
+
+# fast build rule for target.
+ELF2UF2Build/fast:
+	cd /home/pi/pico/ME-0193/P2/build && $(MAKE) -f puzzle/CMakeFiles/ELF2UF2Build.dir/build.make puzzle/CMakeFiles/ELF2UF2Build.dir/build
+.PHONY : ELF2UF2Build/fast
 
 home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 
@@ -1661,9 +1676,10 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... puzzle"
 	@echo "... edit_cache"
+	@echo "... puzzle"
+	@echo "... rebuild_cache"
+	@echo "... ELF2UF2Build"
 	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"

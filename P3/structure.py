@@ -1,6 +1,6 @@
 import math, time
 import numpy as numpy
-from sympy import var, solve
+# from sympy import var, solve, log, I
 
 # Defining Parameters
 L1 = 54
@@ -22,7 +22,10 @@ def solve_2D(x,z):
         return None, None
 
 def solve_3D(x,y,z):
-    cos_beta = var('cos_beta')
-    E = z**2 + y**2 - L1**2 - ((z**2 - L1**2) / (z * cos_beta) + L1 * y / 2) - x**2
-    sols = solve([E],[cos_beta])
-    return sols[cos_beta]
+    
+    # beta = var('beta')
+    # E = L1**2 + (z / cos(beta) + L1 * tan(beta))**2 + x**2 - z**2 - y**2
+    # sols = solve([E],[beta])
+
+    S = -math.log(-(-(-(x + y)*(x - y))**(1/2) + z*1j)/(L1 - (-L1**2 - x**2 + y**2 + z**2)**(1/2)*1j))*1j
+    return S1

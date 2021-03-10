@@ -1,6 +1,6 @@
-import math, time
-import numpy as numpy
-# from sympy import var, solve, log, I
+import math, cmath, time
+import numpy as np
+from sympy import var, solve, log, I, sin, cos, tan
 
 # Defining Parameters
 L1 = 54
@@ -22,10 +22,25 @@ def solve_2D(x,z):
         return None, None
 
 def solve_3D(x,y,z):
-    
-    # beta = var('beta')
-    # E = L1**2 + (z / cos(beta) + L1 * tan(beta))**2 + x**2 - z**2 - y**2
-    # sols = solve([E],[beta])
+    Start = time.time()
+    sols = []
+    beta = var('beta')
+    E = L1**2 + (z / cos(beta) + L1 * tan(beta))**2 + x**2 - z**2 - y**2
+    s = solve([E],[beta])
+    for sol in s:
+        sols.append(complex(sol[0]).real)
+    print(time.time() - Start)
+    return sols
 
-    S = -math.log(-(-(-(x + y)*(x - y))**(1/2) + z*1j)/(L1 - (-L1**2 - x**2 + y**2 + z**2)**(1/2)*1j))*1j
-    return S1
+def fast_solve_3D(x,y,z):
+    # Using cmath instead
+    Start = time.time()
+    sols = []
+    sols.append(-cmath.log(-(- (-(x + y)*(x - y))**(1/2) + z*1j)/(L1 - (- L1**2 - x**2 + y**2 + z**2)**(1/2)*1j))*1j)
+    sols.append(-cmath.log(-(- (-(x + y)*(x - y))**(1/2) + z*1j)/(L1 + (- L1**2 - x**2 + y**2 + z**2)**(1/2)*1j))*1j)
+    sols.append(-cmath.log(-((-(x + y)*(x - y))**(1/2) + z*1j)/(L1 - (- L1**2 - x**2 + y**2 + z**2)**(1/2)*1j))*1j)
+    sols.append(-cmath.log(-((-(x + y)*(x - y))**(1/2) + z*1j)/(L1 + (- L1**2 - x**2 + y**2 + z**2)**(1/2)*1j))*1j)
+    for i in range(len(sols)):
+        sols[i] = sols[i].real
+    print(time.time() - Start)
+    return sols

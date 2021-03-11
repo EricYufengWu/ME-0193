@@ -64,7 +64,7 @@ def fast_solve_3D(coord):
     theta_1 = (math.pi / 2 + beta) * 180 / math.pi
     solve_1.insert(0, theta_1)
     solve_2.insert(0, theta_1)
-    return solve_1, solve_2
+    return [round(s1, 3) for s1 in  solve_1], [round(s2, 3) for s2 in solve_2]
 
 def sweep_test():
     print("testing fast solve...")

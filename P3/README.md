@@ -12,3 +12,4 @@ This feels like a change that is too easily implemented to be counted as a decen
 
 ### Part 3: Visualization
 As of 3am, March 11th, 2021: Got Matplotlib to sweep across some coordinates while displaying the joint angles. the plot appears to be not in the correct shape, but the IK values seems correct. Will come back to fix the plots later!
+![GIF of IK Visualization](https://github.com/EricYufengWu/ME-0193/P3/Documentation/sweep.gif)

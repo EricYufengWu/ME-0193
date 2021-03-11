@@ -7,29 +7,6 @@ L1 = 54
 L2 = 150
 L3 = 150
 
-test_dict = {                      # for testing theta_1 only
-    "b-90": [0, -300, 54],
-    "b-89": [0, -300.9, 48.76],
-    "b-79.9": [0, -304.82, 0],     # when z is zero
-    "b-60": [0, -286.81, -103.23],
-    "b-45": [0, -250.32, -173.95],
-    "b-30": [0, -196.77, -232.81],
-    "b-15": [0, -129.81, -275.80],
-    "b-10": [0, -105.27, -286.07],
-    "b-5": [0, -79.94, -294.15],
-    "b0": [0, -54, -300],
-    "b5": [0, -27.65, -303.56],
-    "b10": [0, -1.09, -304.82],    # 
-    "b10.1": [0, 0, -304.82],      # when y is zero
-    "b10.4": [0, 1.04, -304.82],   #
-    "b15": [0, 25.49, -303.75],
-    "b30": [0, 103.23, -286.81],
-    "b45": [0, 173.95, -250.32],
-    "b60": [0, 232.81, -196.77],
-    "b89": [0, 299.01, -59.23],
-    "b90": [0, 300, -54],
-}
-
 def solve_2D(x,z):
     # Start = time.time()
     try:
@@ -66,13 +43,20 @@ def fast_solve_3D(coord):
     solve_2.insert(0, theta_1)
     return [round(s1, 3) for s1 in  solve_1], [round(s2, 3) for s2 in solve_2]
 
-def sweep_test():
-    print("testing fast solve...")
-    time.sleep(1)
-    start = time.time()
-    for item in test_dict:
-        # ans = fast_solve_3D(test_dict[item])
-        print(item, fast_solve_3D(test_dict[item]))
-    print("fast solve took {} seconds".format(time.time() - start))
+sweep_rez = 20
 
-sweep_test()
+x_sweep = np.linspace(-50, 50, sweep_rez)
+y_sweep = np.linspace(-104, 4, sweep_rez)
+z_sweep = np.linspace(-250, -150, sweep_rez)
+
+path_1 = np.stack((np.asarray([-50 for i in range(sweep_rez)]), np.asarray([-104 for i in range(sweep_rez)]), z_sweep), axis = -1)
+path_2 = np.stack((x_sweep, np.asarray([-104 for i in range(sweep_rez)]), np.asarray([-150 for i in range(sweep_rez)])), axis = -1)
+path_3 = np.stack((np.asarray([50 for i in range(sweep_rez)]), np.asarray([-104 for i in range(sweep_rez)]), np.flip(z_sweep)), axis = -1)
+path_4 = np.stack((np.flip(x_sweep), np.asarray([-104 for i in range(sweep_rez)]), np.asarray([-250 for i in range(sweep_rez)])), axis = -1)
+paths = [path_1, path_2, path_3, path_4]
+
+for path in paths:
+    for point in path:
+        start = time.time()
+        solve = fast_solve_3D(point)
+        print(round(time.time() - start, 8), solve)

@@ -11,4 +11,5 @@ But the good news is, I got the symbolic solutions, imported them into my python
 This feels like a change that is too easily implemented to be counted as a decent part 2... the next step would be to try and convert the calculation into C++/C, which I suspect would make it go even faster. But considering that this assignment is due in less than 10 hours, I might hold off this task until a later time...
 
 ### Part 3: Visualization
-As of 3am, March 11th, 2021: Got Matplotlib to sweep across some coordinates while displaying the joint angles. the plot appears to be not in the correct shape, but the IK values seems correct. Will come back to fix the plots later!
+I finally got the visualiation of 1 leg (forward kinematics) working. It's a bit slow, so future improvements will be targeting that.
+

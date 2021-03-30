@@ -1,8 +1,8 @@
-(module STAND-OFF-REFLOW-M2.5 (layer F.Cu) (tedit 0)
+(module STAND-OFF-REFLOW-M2.5 (layer F.Cu) (tedit 605964C4)
   (fp_text reference H5 (at 0 0) (layer F.SilkS) hide
     (effects (font (size 1.27 1.27) (thickness 0.15)))
   )
-  (fp_text value STAND-OFF-REFLOW2.5MM_TALL (at 0 0) (layer F.SilkS) hide
+  (fp_text value STAND-OFF-REFLOW2.5MM_TALL (at 0 -4.8) (layer F.SilkS) hide
     (effects (font (size 1.27 1.27) (thickness 0.15)))
   )
   (fp_poly (pts (xy 1.9 0.4) (xy 1.9 0.399999) (xy 1.838053 0.677439) (xy 1.732265 0.941294)

@@ -2,14 +2,14 @@ from machine import Pin
 import utime
 
 sequence = [
-    [1,0,0,0],
-    #[1,1,0,0],
-    [0,1,0,0],
-    #[0,1,1,0],
-    [0,0,1,0],
-    #[0,0,1,1],
-    [0,0,0,1],
-    #[1,0,0,1]
+    [1,0,0,0], # Uncomment for half stepping
+    [1,1,0,0],
+    [0,1,0,0], # Uncomment for half stepping
+    [0,1,1,0],
+    [0,0,1,0], # Uncomment for half stepping
+    [0,0,1,1],
+    [0,0,0,1], # Uncomment for half stepping
+    [1,0,0,1]
     ]
 
 A_1 = Pin(18, Pin.OUT)
@@ -26,7 +26,7 @@ def step(steps):
 while 1:
     for motor_step in sequence:
         step(motor_step)
-        utime.sleep(0.02)
+        utime.sleep(0.01)
     
     
     

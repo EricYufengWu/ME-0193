@@ -1,4 +1,4 @@
-16045407231752041
+16050263420585014
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -49308,6 +49308,20 @@ Mini_Stepper
 4
 4
 MicroMod_tinycar_footprint_library
+mouse-bite-2.54mm-slot
+
+
+0
+0
+0
+MicroMod_tinycar_footprint_library
+paste-2.1mm
+
+
+0
+1
+1
+MicroMod_tinycar_footprint_library
 QRE1113GR
 
 
@@ -49356,6 +49370,13 @@ SW_TL1015AF160QG
 0
 2
 2
+MicroMod_tinycar_footprint_library
+tiny_caster
+
+
+0
+0
+0
 MicroMod_tinycar_footprint_library
 Top_adapter
 

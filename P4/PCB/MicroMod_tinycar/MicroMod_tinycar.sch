@@ -58,42 +58,42 @@ Wire Wire Line
 $Comp
 L MicroMod_tinycar-rescue:QRE1113GR U4
 U 1 1 60598F60
-P 13450 6000
-F 0 "U4" V 13100 6050 50  0000 C CNN
-F 1 "QRE1113GR" V 13200 6050 50  0000 C CNN
-F 2 "MicroMod_tinycar_footprint_library:QRE1113GR" H 13050 6550 50  0001 L BNN
-F 3 "" H 13450 6000 50  0001 L BNN
-F 4 "QRE1113GR" H 13250 6650 50  0001 L BNN "MP"
-F 5 "5" H 13450 6000 50  0001 L BNN "PARTREV"
-	1    13450 6000
+P 13450 4650
+F 0 "U4" V 13100 4700 50  0000 C CNN
+F 1 "QRE1113GR" V 13200 4700 50  0000 C CNN
+F 2 "MicroMod_tinycar_footprint_library:QRE1113GR" H 13050 5200 50  0001 L BNN
+F 3 "" H 13450 4650 50  0001 L BNN
+F 4 "QRE1113GR" H 13250 5300 50  0001 L BNN "MP"
+F 5 "5" H 13450 4650 50  0001 L BNN "PARTREV"
+	1    13450 4650
 	1    0    0    -1  
 $EndComp
 $Comp
 L MicroMod_tinycar-rescue:R_Small-MicroMod_tinycar_symbol_library R5
 U 1 1 60599BE5
-P 14050 6200
-F 0 "R5" V 14100 6050 50  0000 L CNN
-F 1 "100" V 13950 6050 50  0000 L CNN
-F 2 "MicroMod_tinycar_footprint_library:R_0805_2012Metric" H 14050 6200 50  0001 C CNN
-F 3 "~" H 14050 6200 50  0001 C CNN
-	1    14050 6200
+P 14050 4850
+F 0 "R5" V 14100 4700 50  0000 L CNN
+F 1 "100" V 13950 4700 50  0000 L CNN
+F 2 "MicroMod_tinycar_footprint_library:R_0805_2012Metric" H 14050 4850 50  0001 C CNN
+F 3 "~" H 14050 4850 50  0001 C CNN
+	1    14050 4850
 	0    -1   -1   0   
 $EndComp
 $Comp
 L MicroMod_tinycar-rescue:R_Small-MicroMod_tinycar_symbol_library R7
 U 1 1 6059AB65
-P 14050 5700
-F 0 "R7" V 14100 5550 50  0000 L CNN
-F 1 "10K" V 13950 5550 50  0000 L CNN
-F 2 "MicroMod_tinycar_footprint_library:R_0805_2012Metric" H 14050 5700 50  0001 C CNN
-F 3 "~" H 14050 5700 50  0001 C CNN
-	1    14050 5700
+P 14050 4350
+F 0 "R7" V 14100 4200 50  0000 L CNN
+F 1 "10K" V 13950 4200 50  0000 L CNN
+F 2 "MicroMod_tinycar_footprint_library:R_0805_2012Metric" H 14050 4350 50  0001 C CNN
+F 3 "~" H 14050 4350 50  0001 C CNN
+	1    14050 4350
 	0    -1   -1   0   
 $EndComp
-Text GLabel 14300 5500 2    50   Input ~ 0
+Text GLabel 14300 4150 2    50   Input ~ 0
 Light1_bot
 Wire Wire Line
-	13750 5900 13750 6000
+	13750 4550 13750 4650
 $Comp
 L MicroMod_tinycar-rescue:C_Small-MicroMod_tinycar_symbol_library C2
 U 1 1 605CA5D9
@@ -376,21 +376,21 @@ Wire Wire Line
 Wire Wire Line
 	2300 5500 2300 5250
 Wire Wire Line
-	13750 5700 13850 5700
-Connection ~ 13850 5700
-Text GLabel 14350 3200 2    50   Input ~ 0
+	13750 4350 13850 4350
+Connection ~ 13850 4350
+Text GLabel 14400 2250 2    50   Input ~ 0
 Light0_bot
-Text GLabel 13550 3200 0    50   Input ~ 0
+Text GLabel 13600 2250 0    50   Input ~ 0
 Light1_bot
 $Comp
 L MicroMod_tinycar-rescue:Conn_02x15_Counter_Clockwise J6
 U 1 1 606A3D0D
-P 13900 2900
-F 0 "J6" H 13950 3815 50  0000 C CNN
-F 1 "Conn_02x15_Counter_Clockwise" H 13950 3724 50  0000 C CNN
-F 2 "MicroMod_tinycar_footprint_library:Bottom_adapter" H 13900 2900 50  0001 C CNN
-F 3 "~" H 13900 2900 50  0001 C CNN
-	1    13900 2900
+P 13950 1950
+F 0 "J6" H 14000 2865 50  0000 C CNN
+F 1 "Conn_02x15_Counter_Clockwise" H 14000 2774 50  0000 C CNN
+F 2 "MicroMod_tinycar_footprint_library:Bottom_adapter" H 13950 1950 50  0001 C CNN
+F 3 "~" H 13950 1950 50  0001 C CNN
+	1    13950 1950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -408,29 +408,29 @@ NoConn ~ 2500 7900
 $Comp
 L MicroMod_tinycar-rescue:Stepper U6
 U 1 1 606EC968
-P 14750 4200
-F 0 "U6" H 14758 4525 50  0000 C CNN
-F 1 "Stepper" H 14758 4434 50  0000 C CNN
-F 2 "MicroMod_tinycar_footprint_library:Mini_Stepper" H 14800 4200 50  0001 C CNN
-F 3 "" H 14800 4200 50  0001 C CNN
-	1    14750 4200
+P 14800 3250
+F 0 "U6" H 14808 3575 50  0000 C CNN
+F 1 "Stepper" H 14808 3484 50  0000 C CNN
+F 2 "MicroMod_tinycar_footprint_library:Mini_Stepper" H 14850 3250 50  0001 C CNN
+F 3 "" H 14850 3250 50  0001 C CNN
+	1    14800 3250
 	-1   0    0    1   
 $EndComp
 $Comp
 L MicroMod_tinycar-rescue:Stepper U3
 U 1 1 606ECEED
-P 13150 4100
-F 0 "U3" H 13158 4425 50  0000 C CNN
-F 1 "Stepper" H 13158 4334 50  0000 C CNN
-F 2 "MicroMod_tinycar_footprint_library:Mini_Stepper" H 13200 4100 50  0001 C CNN
-F 3 "" H 13200 4100 50  0001 C CNN
-	1    13150 4100
+P 13200 3150
+F 0 "U3" H 13208 3475 50  0000 C CNN
+F 1 "Stepper" H 13208 3384 50  0000 C CNN
+F 2 "MicroMod_tinycar_footprint_library:Mini_Stepper" H 13250 3150 50  0001 C CNN
+F 3 "" H 13250 3150 50  0001 C CNN
+	1    13200 3150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13550 3200 13700 3200
+	13600 2250 13750 2250
 Wire Wire Line
-	14200 3200 14350 3200
+	14250 2250 14400 2250
 Wire Wire Line
 	1800 5050 1800 5500
 Connection ~ 1800 5050
@@ -716,10 +716,6 @@ Text GLabel 9750 6850 2    50   Input ~ 0
 PWM1
 Text GLabel 9750 6750 2    50   Input ~ 0
 PWM0
-Text GLabel 7550 6550 0    50   Input ~ 0
-USBHOST_D+
-Text GLabel 7550 6450 0    50   Input ~ 0
-USBHOST_D-
 Text GLabel 9750 7750 2    50   Input ~ 0
 RX1
 Text GLabel 9750 7650 2    50   Input ~ 0
@@ -770,18 +766,18 @@ Wire Wire Line
 Wire Wire Line
 	3800 9850 3800 10050
 Wire Wire Line
-	14350 2200 14350 2300
-Connection ~ 14350 2300
+	14400 1250 14400 1350
+Connection ~ 14400 1350
 Wire Wire Line
-	13550 2200 13700 2200
+	13600 1250 13750 1250
 Wire Wire Line
-	13550 2200 13550 2300
+	13600 1250 13600 1350
 Wire Wire Line
-	13550 2300 13700 2300
+	13600 1350 13750 1350
 Wire Wire Line
-	14200 2200 14350 2200
+	14250 1250 14400 1250
 Wire Wire Line
-	14200 2300 14350 2300
+	14250 1350 14400 1350
 $Comp
 L MicroMod_tinycar-rescue:R_Small-MicroMod_tinycar_symbol_library R1
 U 1 1 6078D534
@@ -861,97 +857,97 @@ Wire Wire Line
 	2950 5900 2950 6150
 Wire Wire Line
 	4000 5900 4000 6150
-Text GLabel 13400 2200 0    50   Input ~ 0
+Text GLabel 13450 1250 0    50   Input ~ 0
 3V3_bot
 Wire Wire Line
-	13550 2200 13400 2200
-Connection ~ 13550 2200
-Text GLabel 14500 2300 2    50   Input ~ 0
+	13600 1250 13450 1250
+Connection ~ 13600 1250
+Text GLabel 14550 1350 2    50   Input ~ 0
 GND_bot
 Wire Wire Line
-	14350 2300 14500 2300
-Text GLabel 14300 6200 2    50   Input ~ 0
+	14400 1350 14550 1350
+Text GLabel 14300 4850 2    50   Input ~ 0
 3V3_bot
-Text GLabel 14300 5700 2    50   Input ~ 0
+Text GLabel 14300 4350 2    50   Input ~ 0
 3V3_bot
-Text GLabel 14300 6000 2    50   Input ~ 0
+Text GLabel 14300 4650 2    50   Input ~ 0
 GND_bot
 Wire Wire Line
-	13850 5700 13950 5700
-Connection ~ 13750 6000
+	13850 4350 13950 4350
+Connection ~ 13750 4650
 Wire Wire Line
-	13750 6000 14300 6000
+	13750 4650 14300 4650
 Wire Wire Line
-	13750 6200 13950 6200
+	13750 4850 13950 4850
 Wire Wire Line
-	14150 6200 14300 6200
+	14150 4850 14300 4850
 Wire Wire Line
-	14150 5700 14300 5700
+	14150 4350 14300 4350
 Wire Wire Line
-	13850 5500 14300 5500
+	13850 4150 14300 4150
 Wire Wire Line
-	13850 5500 13850 5700
+	13850 4150 13850 4350
 $Comp
 L MicroMod_tinycar-rescue:QRE1113GR U5
 U 1 1 6093A663
-P 13450 7750
-F 0 "U5" V 13100 7800 50  0000 C CNN
-F 1 "QRE1113GR" V 13200 7800 50  0000 C CNN
-F 2 "MicroMod_tinycar_footprint_library:QRE1113GR" H 13050 8300 50  0001 L BNN
-F 3 "" H 13450 7750 50  0001 L BNN
-F 4 "QRE1113GR" H 13250 8400 50  0001 L BNN "MP"
-F 5 "5" H 13450 7750 50  0001 L BNN "PARTREV"
-	1    13450 7750
+P 13450 6400
+F 0 "U5" V 13100 6450 50  0000 C CNN
+F 1 "QRE1113GR" V 13200 6450 50  0000 C CNN
+F 2 "MicroMod_tinycar_footprint_library:QRE1113GR" H 13050 6950 50  0001 L BNN
+F 3 "" H 13450 6400 50  0001 L BNN
+F 4 "QRE1113GR" H 13250 7050 50  0001 L BNN "MP"
+F 5 "5" H 13450 6400 50  0001 L BNN "PARTREV"
+	1    13450 6400
 	1    0    0    -1  
 $EndComp
 $Comp
 L MicroMod_tinycar-rescue:R_Small-MicroMod_tinycar_symbol_library R8
 U 1 1 6093A669
-P 14050 7950
-F 0 "R8" V 14100 7800 50  0000 L CNN
-F 1 "100" V 13950 7800 50  0000 L CNN
-F 2 "MicroMod_tinycar_footprint_library:R_0805_2012Metric" H 14050 7950 50  0001 C CNN
-F 3 "~" H 14050 7950 50  0001 C CNN
-	1    14050 7950
+P 14050 6600
+F 0 "R8" V 14100 6450 50  0000 L CNN
+F 1 "100" V 13950 6450 50  0000 L CNN
+F 2 "MicroMod_tinycar_footprint_library:R_0805_2012Metric" H 14050 6600 50  0001 C CNN
+F 3 "~" H 14050 6600 50  0001 C CNN
+	1    14050 6600
 	0    -1   -1   0   
 $EndComp
 $Comp
 L MicroMod_tinycar-rescue:R_Small-MicroMod_tinycar_symbol_library R6
 U 1 1 6093A66F
-P 14050 7450
-F 0 "R6" V 14100 7300 50  0000 L CNN
-F 1 "10K" V 13950 7300 50  0000 L CNN
-F 2 "MicroMod_tinycar_footprint_library:R_0805_2012Metric" H 14050 7450 50  0001 C CNN
-F 3 "~" H 14050 7450 50  0001 C CNN
-	1    14050 7450
+P 14050 6100
+F 0 "R6" V 14100 5950 50  0000 L CNN
+F 1 "10K" V 13950 5950 50  0000 L CNN
+F 2 "MicroMod_tinycar_footprint_library:R_0805_2012Metric" H 14050 6100 50  0001 C CNN
+F 3 "~" H 14050 6100 50  0001 C CNN
+	1    14050 6100
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	13750 7650 13750 7750
+	13750 6300 13750 6400
 Wire Wire Line
-	13750 7450 13850 7450
-Connection ~ 13850 7450
-Text GLabel 14300 7950 2    50   Input ~ 0
+	13750 6100 13850 6100
+Connection ~ 13850 6100
+Text GLabel 14300 6600 2    50   Input ~ 0
 3V3_bot
-Text GLabel 14300 7450 2    50   Input ~ 0
+Text GLabel 14300 6100 2    50   Input ~ 0
 3V3_bot
-Text GLabel 14300 7750 2    50   Input ~ 0
+Text GLabel 14300 6400 2    50   Input ~ 0
 GND_bot
 Wire Wire Line
-	13850 7450 13950 7450
-Connection ~ 13750 7750
+	13850 6100 13950 6100
+Connection ~ 13750 6400
 Wire Wire Line
-	13750 7750 14300 7750
+	13750 6400 14300 6400
 Wire Wire Line
-	13750 7950 13950 7950
+	13750 6600 13950 6600
 Wire Wire Line
-	14150 7950 14300 7950
+	14150 6600 14300 6600
 Wire Wire Line
-	14150 7450 14300 7450
+	14150 6100 14300 6100
 Wire Wire Line
-	13850 7250 14300 7250
+	13850 5900 14300 5900
 Wire Wire Line
-	13850 7250 13850 7450
+	13850 5900 13850 6100
 NoConn ~ 10100 2350
 NoConn ~ 10100 2450
 NoConn ~ 10100 2550
@@ -981,88 +977,88 @@ NoConn ~ 9550 7550
 NoConn ~ 9550 7450
 NoConn ~ 9550 7050
 NoConn ~ 9550 6950
-NoConn ~ 13700 2400
-NoConn ~ 13700 2500
-NoConn ~ 13700 2600
-NoConn ~ 13700 2700
-NoConn ~ 13700 2800
-NoConn ~ 13700 2900
-NoConn ~ 13700 3000
-NoConn ~ 13700 3100
-NoConn ~ 14200 3100
-NoConn ~ 14200 3000
-NoConn ~ 14200 2900
-NoConn ~ 14200 2800
-NoConn ~ 14200 2700
-NoConn ~ 14200 2600
-NoConn ~ 14200 2500
-NoConn ~ 14200 2400
+NoConn ~ 13750 1450
+NoConn ~ 13750 1550
+NoConn ~ 13750 1650
+NoConn ~ 13750 1750
+NoConn ~ 13750 1850
+NoConn ~ 13750 1950
+NoConn ~ 13750 2050
+NoConn ~ 13750 2150
+NoConn ~ 14250 2150
+NoConn ~ 14250 2050
+NoConn ~ 14250 1950
+NoConn ~ 14250 1850
+NoConn ~ 14250 1750
+NoConn ~ 14250 1650
+NoConn ~ 14250 1550
+NoConn ~ 14250 1450
 NoConn ~ 9600 2450
 NoConn ~ 9600 2350
-Text GLabel 13550 3500 0    50   Input ~ 0
+Text GLabel 13600 2650 0    50   Input ~ 0
 A0+
-Text GLabel 13550 3600 0    50   Input ~ 0
+Text GLabel 13600 2550 0    50   Input ~ 0
 A0-
-Text GLabel 13550 3300 0    50   Input ~ 0
+Text GLabel 13600 2450 0    50   Input ~ 0
 B0-
-Text GLabel 13550 3400 0    50   Input ~ 0
+Text GLabel 13600 2350 0    50   Input ~ 0
 B0+
-Text GLabel 13500 4000 2    50   Input ~ 0
+Text GLabel 13550 3050 2    50   Input ~ 0
 A0+
-Text GLabel 13500 4100 2    50   Input ~ 0
+Text GLabel 13550 3150 2    50   Input ~ 0
 A0-
-Text GLabel 13500 4300 2    50   Input ~ 0
+Text GLabel 13550 3350 2    50   Input ~ 0
 B0-
-Text GLabel 13500 4200 2    50   Input ~ 0
+Text GLabel 13550 3250 2    50   Input ~ 0
 B0+
 Wire Wire Line
-	13550 3300 13700 3300
+	13600 2350 13750 2350
 Wire Wire Line
-	13700 3400 13550 3400
+	13750 2450 13600 2450
 Wire Wire Line
-	13700 3500 13550 3500
+	13750 2550 13600 2550
 Wire Wire Line
-	13700 3600 13550 3600
+	13750 2650 13600 2650
 Wire Wire Line
-	13350 4200 13500 4200
+	13400 3250 13550 3250
 Wire Wire Line
-	13350 4300 13500 4300
+	13400 3350 13550 3350
 Wire Wire Line
-	13500 4000 13350 4000
+	13550 3050 13400 3050
 Wire Wire Line
-	13350 4100 13500 4100
-Text GLabel 14350 3600 2    50   Input ~ 0
+	13400 3150 13550 3150
+Text GLabel 14400 2550 2    50   Input ~ 0
 A1+
-Text GLabel 14350 3500 2    50   Input ~ 0
+Text GLabel 14400 2650 2    50   Input ~ 0
 A1-
-Text GLabel 14350 3400 2    50   Input ~ 0
+Text GLabel 14400 2350 2    50   Input ~ 0
 B1-
-Text GLabel 14350 3300 2    50   Input ~ 0
+Text GLabel 14400 2450 2    50   Input ~ 0
 B1+
-Text GLabel 14400 4300 0    50   Input ~ 0
+Text GLabel 14450 3350 0    50   Input ~ 0
 A1+
-Text GLabel 14400 4000 0    50   Input ~ 0
+Text GLabel 14450 3050 0    50   Input ~ 0
 B1-
-Text GLabel 14400 4100 0    50   Input ~ 0
+Text GLabel 14450 3150 0    50   Input ~ 0
 B1+
-Text GLabel 14400 4200 0    50   Input ~ 0
+Text GLabel 14450 3250 0    50   Input ~ 0
 A1-
 Wire Wire Line
-	14400 4000 14550 4000
+	14450 3050 14600 3050
 Wire Wire Line
-	14550 4100 14400 4100
+	14600 3150 14450 3150
 Wire Wire Line
-	14400 4200 14550 4200
+	14450 3250 14600 3250
 Wire Wire Line
-	14550 4300 14400 4300
+	14600 3350 14450 3350
 Wire Wire Line
-	14200 3600 14350 3600
+	14250 2650 14400 2650
 Wire Wire Line
-	14350 3500 14200 3500
+	14400 2550 14250 2550
 Wire Wire Line
-	14200 3400 14350 3400
+	14250 2450 14400 2450
 Wire Wire Line
-	14350 3300 14200 3300
+	14400 2350 14250 2350
 NoConn ~ 7750 8250
 NoConn ~ 7750 8350
 Wire Wire Line
@@ -1077,7 +1073,7 @@ Wire Wire Line
 	9550 6750 9750 6750
 Wire Wire Line
 	9750 6850 9550 6850
-Text GLabel 14300 7250 2    50   Input ~ 0
+Text GLabel 14300 5900 2    50   Input ~ 0
 Light0_bot
 Wire Wire Line
 	7550 7950 7750 7950
@@ -1321,4 +1317,44 @@ Wire Wire Line
 	7550 7050 7750 7050
 Wire Wire Line
 	7750 7150 7550 7150
+NoConn ~ 7050 1700
+NoConn ~ 7050 1600
+NoConn ~ 9600 1550
+NoConn ~ 9600 1650
+NoConn ~ 7750 6450
+NoConn ~ 7750 6550
+Wire Wire Line
+	10250 2250 10100 2250
+Text GLabel 10250 2250 2    50   Input ~ 0
+PWM1
+$Comp
+L MicroMod_tinycar-rescue:caster U7
+U 1 1 606D741C
+P 13950 7700
+F 0 "U7" H 14228 7746 50  0000 L CNN
+F 1 "caster" H 14228 7655 50  0000 L CNN
+F 2 "MicroMod_tinycar_footprint_library:tiny_caster" H 13950 7700 50  0001 C CNN
+F 3 "" H 13950 7700 50  0001 C CNN
+	1    13950 7700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9550 7250
+NoConn ~ 9550 7350
+Wire Notes Line
+	11750 8500 16050 8500
+Text Notes 11850 8650 0    50   ~ 0
+Panelization
+$Comp
+L MicroMod_tinycar-rescue:MouseBite U8
+U 1 1 606D0722
+P 14000 9300
+F 0 "U8" H 14000 9615 50  0000 C CNN
+F 1 "MouseBite" H 14000 9524 50  0000 C CNN
+F 2 "MicroMod_tinycar_footprint_library:mouse-bite-2.54mm-slot" H 14000 9300 50  0001 C CNN
+F 3 "" H 14000 9300 50  0001 C CNN
+	1    14000 9300
+	1    0    0    -1  
+$EndComp
+Text Notes 12750 10400 0    197  ~ 0
+MicroMod TinyCar\n
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-(module Top_adapter (layer F.Cu) (tedit 605BF9CE)
+(module Top_adapter (layer F.Cu) (tedit 606483A6)
   (fp_text reference J6 (at 5.4 8.8 -180) (layer F.SilkS) hide
     (effects (font (size 0.7239 0.7239) (thickness 0.057912)) (justify right top))
   )
@@ -52,4 +52,9 @@
   (pad 28 thru_hole oval (at 12.065 -19.05 90) (size 1 1.5) (drill 0.65) (layers *.Cu *.Mask))
   (pad 29 thru_hole oval (at 12.065 -20.32 90) (size 1 1.5) (drill 0.65) (layers *.Cu *.Mask))
   (pad 30 thru_hole oval (at 12.065 -21.59 90) (size 1 1.5) (drill 0.65) (layers *.Cu *.Mask))
+  (model ${KIPRJMOD}/STEP/female-pinheader-wide.STEP
+    (offset (xyz 0 12.7 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 90))
+  )
 )

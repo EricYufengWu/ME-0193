@@ -380,6 +380,25 @@ X GND GND3 -900 -1700 100 R 0 50 1 0 B
 ENDDRAW
 ENDDEF
 #
+# MicroMod_tinycar-rescue_MouseBite
+#
+DEF MicroMod_tinycar-rescue_MouseBite U 0 40 Y Y 1 F N
+F0 "U" 0 -200 50 H V C CNN
+F1 "MicroMod_tinycar-rescue_MouseBite" 0 250 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -400 0 100 0 1 0 N
+C -200 -100 50 0 1 0 N
+C -200 100 50 0 1 0 N
+C 0 -100 50 0 1 0 N
+C 0 100 50 0 1 0 N
+C 200 -100 50 0 1 0 N
+C 200 100 50 0 1 0 N
+C 400 0 100 0 1 0 N
+ENDDRAW
+ENDDEF
+#
 # MicroMod_tinycar-rescue_QRE1113GR
 #
 DEF MicroMod_tinycar-rescue_QRE1113GR U 0 40 Y N 1 L N
@@ -552,6 +571,20 @@ X D+ 3 300 0 100 L 50 50 1 1 P
 X ID 4 300 -200 100 L 50 50 1 1 P
 X GND 5 0 -400 100 U 50 50 1 1 w
 X Shield 6 -100 -400 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# MicroMod_tinycar-rescue_caster
+#
+DEF MicroMod_tinycar-rescue_caster U 0 40 Y Y 1 F N
+F0 "U" 0 150 50 H V C CNN
+F1 "MicroMod_tinycar-rescue_caster" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -200 0 50 0 1 0 N
+C 0 0 100 0 1 0 N
+C 200 0 50 0 1 0 N
 ENDDRAW
 ENDDEF
 #

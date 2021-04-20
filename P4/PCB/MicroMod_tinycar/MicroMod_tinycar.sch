@@ -406,7 +406,7 @@ F 3 "" H 2200 5050 50  0001 L CNN
 $EndComp
 NoConn ~ 2500 7900
 $Comp
-L MicroMod_tinycar-rescue:Stepper U6
+L MicroMod_tinycar-rescue:Stepper-MicroMod_tinycar-rescue U6
 U 1 1 606EC968
 P 14800 3250
 F 0 "U6" H 14808 3575 50  0000 C CNN
@@ -417,7 +417,7 @@ F 3 "" H 14850 3250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L MicroMod_tinycar-rescue:Stepper U3
+L MicroMod_tinycar-rescue:Stepper-MicroMod_tinycar-rescue U3
 U 1 1 606ECEED
 P 13200 3150
 F 0 "U3" H 13208 3475 50  0000 C CNN
@@ -466,9 +466,9 @@ Wire Wire Line
 Wire Wire Line
 	3700 8100 3750 8100
 Text GLabel 9750 5750 2    50   Input ~ 0
-A0+_top
-Text GLabel 9750 5550 2    50   Input ~ 0
 B0-_top
+Text GLabel 9750 5550 2    50   Input ~ 0
+A0+_top
 Text GLabel 9750 5650 2    50   Input ~ 0
 B0+_top
 Text GLabel 9750 5850 2    50   Input ~ 0
@@ -481,13 +481,13 @@ Wire Wire Line
 	9550 5750 9750 5750
 Wire Wire Line
 	9750 5850 9550 5850
-Text GLabel 9750 5350 2    50   Input ~ 0
+Text GLabel 7550 7750 0    50   Input ~ 0
 B1-_top
 Text GLabel 9750 5450 2    50   Input ~ 0
 B1+_top
 Text GLabel 7550 7650 0    50   Input ~ 0
 A1-_top
-Text GLabel 7550 7750 0    50   Input ~ 0
+Text GLabel 9750 5350 2    50   Input ~ 0
 A1+_top
 Wire Wire Line
 	9550 5450 9750 5450
@@ -995,22 +995,8 @@ NoConn ~ 14250 1550
 NoConn ~ 14250 1450
 NoConn ~ 9600 2450
 NoConn ~ 9600 2350
-Text GLabel 13600 2650 0    50   Input ~ 0
-A0+
-Text GLabel 13600 2550 0    50   Input ~ 0
-A0-
-Text GLabel 13600 2450 0    50   Input ~ 0
-B0-
 Text GLabel 13600 2350 0    50   Input ~ 0
-B0+
-Text GLabel 13550 3050 2    50   Input ~ 0
 A0+
-Text GLabel 13550 3150 2    50   Input ~ 0
-A0-
-Text GLabel 13550 3350 2    50   Input ~ 0
-B0-
-Text GLabel 13550 3250 2    50   Input ~ 0
-B0+
 Wire Wire Line
 	13600 2350 13750 2350
 Wire Wire Line
@@ -1027,22 +1013,16 @@ Wire Wire Line
 	13550 3050 13400 3050
 Wire Wire Line
 	13400 3150 13550 3150
-Text GLabel 14400 2550 2    50   Input ~ 0
-A1+
 Text GLabel 14400 2650 2    50   Input ~ 0
-A1-
-Text GLabel 14400 2350 2    50   Input ~ 0
 B1-
-Text GLabel 14400 2450 2    50   Input ~ 0
+Text GLabel 14400 2350 2    50   Input ~ 0
 B1+
-Text GLabel 14450 3350 0    50   Input ~ 0
+Text GLabel 14400 2450 2    50   Input ~ 0
 A1+
 Text GLabel 14450 3050 0    50   Input ~ 0
-B1-
-Text GLabel 14450 3150 0    50   Input ~ 0
 B1+
-Text GLabel 14450 3250 0    50   Input ~ 0
-A1-
+Text GLabel 14450 3150 0    50   Input ~ 0
+A1+
 Wire Wire Line
 	14450 3050 14600 3050
 Wire Wire Line
@@ -1230,9 +1210,9 @@ Wire Wire Line
 	7550 2500 7700 2500
 Text GLabel 7700 2500 2    50   Input ~ 0
 B1+_top
-Text GLabel 7700 2600 2    50   Input ~ 0
-B1-_top
 Text GLabel 7700 2800 2    50   Input ~ 0
+B1-_top
+Text GLabel 7700 2600 2    50   Input ~ 0
 A1+_top
 Text GLabel 7700 2700 2    50   Input ~ 0
 A1-_top
@@ -1240,10 +1220,6 @@ Text GLabel 6900 2800 0    50   Input ~ 0
 A0-_top
 Text GLabel 6900 2600 0    50   Input ~ 0
 B0+_top
-Text GLabel 6900 2500 0    50   Input ~ 0
-B0-_top
-Text GLabel 6900 2700 0    50   Input ~ 0
-A0+_top
 Wire Wire Line
 	7550 2400 7700 2400
 Wire Wire Line
@@ -1357,4 +1333,36 @@ F 3 "" H 14000 9300 50  0001 C CNN
 $EndComp
 Text Notes 12750 10400 0    197  ~ 0
 MicroMod TinyCar\n
+Text GLabel 13550 3350 2    50   Input ~ 0
+B0+
+Text GLabel 13550 3250 2    50   Input ~ 0
+A0+
+Text GLabel 13550 3050 2    50   Input ~ 0
+A0-
+Text GLabel 13600 2650 0    50   Input ~ 0
+A0-
+Text GLabel 13550 3150 2    50   Input ~ 0
+B0-
+Text GLabel 14450 3250 0    50   Input ~ 0
+B1-
+Text GLabel 14400 2550 2    50   Input ~ 0
+A1-
+Text GLabel 14450 3350 0    50   Input ~ 0
+A1-
+Text GLabel 13600 2550 0    50   Input ~ 0
+B0-
+Text GLabel 13600 2450 0    50   Input ~ 0
+B0+
+Text GLabel 6900 2700 0    50   Input ~ 0
+B0-_top
+Text GLabel 6900 2500 0    50   Input ~ 0
+A0+_top
+Text GLabel 8150 2800 2    50   Input ~ 0
+B1-
+Text GLabel 8150 2500 2    50   Input ~ 0
+B1+
+Text GLabel 8150 2600 2    50   Input ~ 0
+A1+
+Text GLabel 8150 2700 2    50   Input ~ 0
+A1-
 $EndSCHEMATC
